@@ -5,42 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bioengineering Data Visualizer</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 20px;
-        }
-        canvas {
-            max-width: 600px;
-            margin: 20px auto;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1>Bioengineering Data Visualizer</h1>
     <p>Displaying sample biological data using HTML, CSS, and JavaScript.</p>
     <canvas id="bioChart"></canvas>
-    
-    <script>
-        const ctx = document.getElementById('bioChart').getContext('2d');
-        const bioChart = new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: ['Gene A', 'Gene B', 'Gene C', 'Gene D'],
-                datasets: [{
-                    label: 'Expression Level',
-                    data: [12, 19, 7, 15],
-                    backgroundColor: ['blue', 'green', 'red', 'purple']
-                }]
-            },
-            options: {
-                responsive: true,
-                scales: {
-                    y: { beginAtZero: true }
-                }
-            }
-        });
-    </script>
+
+    <script src="script.js"></script>
 </body>
 </html>
